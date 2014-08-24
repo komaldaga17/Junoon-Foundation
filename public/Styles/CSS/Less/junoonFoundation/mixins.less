@@ -1,7 +1,13 @@
-.shadow(@x:0, @y:1px, @blur:2px, @color:@grayShade8){
+.box-shadow(@x:0, @y:1px, @blur:2px, @color:@white){
 	-webkit-box-shadow:	@x @y @blur @color;
 	-moz-box-shadow:	@x @y @blur @color;
 	box-shadow:		@x @y @blur @color;
+}
+.text-shadow(@x:0, @y:1px, @blur:2px, @color:@white){
+	-webkit-text-shadow: @x @y @blur @color;
+	-moz-text-shadow:@x @y @blur @color;
+	-o-text-shadow:@x @y @blur @color;
+	text-shadow:@x @y @blur @color;
 }
 
 
