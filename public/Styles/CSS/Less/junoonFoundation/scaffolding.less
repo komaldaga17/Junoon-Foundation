@@ -5,7 +5,7 @@
  	.box-shadow(0px,3px,1px, @grayShade6);
  }
  
- header{
+ header{							//Header of the junoon starts here
  	margin-top:60px;
  	.title{
  		float:left;
@@ -38,9 +38,9 @@
  			}
  		}
  	}
- }
+ }											//Header of the junoon ends here
 
- nav.container{
+ nav.container{								//Navigation starts here
  	ul{
  		float:right;
  		li{
@@ -62,10 +62,10 @@
  				color:@titleColor;
  			}
  		}
- 	}
+ 	}										//Navigation ends here
  }
 
- section.container{
+ section.container{							//Container for the thought block starts here
  	.globalGap;
  	margin-bottom:40px;
  	.row{
@@ -123,8 +123,35 @@
  				.box-shadow(0px, 0px, 24px, @titleColor);
  			}
 
+ 			
+
  		}
 
  	}
- }
+ }		//Container for the thought block starts here
 
+
+
+ section.container{
+ 	.row{
+ 		&.notHover{
+	 		.col-md-4{
+	 			.meet-team{
+	 				h2{
+	 					color:@titleColor;
+	 					font-weight:400;
+	 					font-style:italic;
+	 				}
+	 				p{
+	 					.text-shadow(0,0,1px,@grayShade3);
+	 				}
+	 			}
+
+	 		}
+	 		:hover{
+	 			.box-shadow(0px, 0px, 0px, @titleColor);
+	 		}
+	 	}
+	}
+
+}
