@@ -135,22 +135,30 @@
  section.container{
  	.row{
  		&.notHover{
-	 		.col-md-4{
-	 			.meet-team{
-	 				h2{
+	 		[class*="col-md"]{
+	 			h2{
 	 					color:@titleColor;
 	 					font-weight:400;
 	 					font-style:italic;
+	 					border-bottom:5px solid @redShade8;
+	 					padding-top:15px;
 	 				}
 	 				p{
-	 					.text-shadow(0,0,1px,@grayShade3);
+	 					.text-shadow(0,0,1px,@grayShade2);
+	 					font-size:18px;
 	 				}
+	 				:nth-child(2){
+	 					margin-top:25px;
+	 				}
+	 			i{
+	 		 	 color:@redShade9;
 	 			}
 
 	 		}
 	 		:hover{
 	 			.box-shadow(0px, 0px, 0px, @titleColor);
 	 		}
+	 		
 	 	}
 	}
 
