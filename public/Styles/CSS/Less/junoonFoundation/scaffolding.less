@@ -195,3 +195,45 @@ section.container{
 		}
 	}
 }
+footer.container-fluid{
+	.footerSurface{
+		height:200px;
+		width:auto;
+		background-color:@grayShade9;
+		.copyRight{
+			height: auto;
+			width: 100%;
+			background-color:@titleColor;
+			color: #fff;
+			padding: 9px;
+			font-size: 20px;
+		}
+		.row{
+			margin-top:90px;
+			[class*="col-md"]{
+				ul{
+					font-size:14px;
+					li{
+						float:left;
+						padding-left:10px;
+						padding-right:10px;
+						border-right:1px solid white;
+						color:@white;
+					}
+				}
+			}
+			:nth-child(2){
+				ul{
+					font-size:14px;
+					li{
+						float:left;
+						padding-left:10px;
+						padding-right:10px;
+						color:white;
+						border:none;
+					}
+				}
+			}
+		}
+	}
+}
