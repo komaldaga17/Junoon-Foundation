@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="junoonFoundation">
+<html lang="en" ng-app="junoonFoundation">
 	<head>
 		<!-- Junoon Foundation Title -->
 		<title>Junoon Foundation</title>
@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="Styles/CSS/junoonFoundation.min.css" />
 
 	</head>
-	<body ng-controller="Mainctrl">
+	<body ng-controller="Mainctrl" ng-init="initMain()">
 		<div id="junoon">  <!-- Our CSS start fro, this id -->
 			<div class="headerLine"> <!-- This has the border below the navigation -->
 				<header class="container"><!-- This header has title and social links -->
@@ -255,11 +255,12 @@
 					
 		</div>
 		<!-- Module Specific  -->
-		<script type="text/javascript" rel="javascript" src="js\angular-1.2.26\angular.min.js"></script>
 
+		<script rel="javascript" src="js/angular-1.2.26/angular.min.js"></script>
+		<script rel="javascript" src="js/angular-1.2.26/angular-route.min.js"></script>
 		<!-- Application Related Module -->
-		<script type="text/javascript" rel="javascript" src="Resources\main\application\app.js"></script>
-		<script type="text/javascript" rel="javascript" src="Resources\main\application\Mainctrl.js"></script>
+		<script rel="javascript" src="Resources/main/application/app.js"></script>
+		<script rel="javascript" src="Resources/main/application/Mainctrl.js"></script>
 		
 	</body>
 </html>
