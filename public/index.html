@@ -24,43 +24,7 @@
 	</head>
 	<body ng-controller="Mainctrl" ng-init="initMain()">
 		<div id="junoon">  <!-- Our CSS start fro, this id -->
-			<div class="headerLine"> <!-- This has the border below the navigation -->
-				<header class="container"><!-- This header has title and social links -->
-					<div class="title">
-						<h1>Junoon</h1>
-						<h2>Foundation</h2>
-					</div>
-					<div class="social">
-						<ul>
-							<li>
-								<a href="#"><i class="fa fa-facebook fa-3x"></i></a>
-							</li>
-							<li class="socialGap">
-								<a href="#"><i class="fa fa-twitter fa-3x"></i></a>
-							</li>
-							<li class="socialGap">
-								<a href="#"><i class="fa fa-google fa-3x"></i></a>
-							</li>
-						</ul>
-					</div>
-				</header><!-- Header Ends Over Here -->
-				<nav class="container"><!-- Navigation Class Begins Here -->
-					<ul>
-						<li class="navigationGap active">
-							<i class = "fa fa-home" style="margin-right:5px;" ></i> Home
-						</li>
-						<li class="navigationGap">
-							<i class = "fa fa-tasks" style="margin-right:5px;"></i> What We Do
-						</li>
-						<li class="navigationGap">
-							<i class = "fa fa-users" style="margin-right:5px;"></i> Who We Are
-						</li>
-						<li class="navigationGap">
-							<i class = "fa fa-envelope" style="margin-right:5px;"></i> Contact Us
-						</li>
-					</ul>
-				</nav><!-- Navigation class ends here -->
-			</div><!-- Header Class Ends Here -->
+			<div ng-include="'Resources/main/component/header.html'"></div>
 			<div class="sectionLine">
 				<section class="container"> <!-- Here starts the content section of the Website -->
 					<div class="row gap-bottom"> <!-- Row of the thought block starts here -->
@@ -247,11 +211,7 @@
 					
 				</section>
 			</div>
-			<footer class="container-fluid gap-bottom">
-				<div class="footerSurface">
-					<div class="text-center copyRight">Copyright 2014 - Junoon Foundation</div>
-				</div>
-			</footer>
+			<div ng-include="'Resources/main/component/footer.html'">
 					
 		</div>
 		<!-- Module Specific  -->
