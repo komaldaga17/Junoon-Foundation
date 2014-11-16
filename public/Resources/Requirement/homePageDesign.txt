@@ -27,8 +27,10 @@ As Home page in Junoon Foundation Includes contains three part --
 
 So the final bean approach for the home page is give below -- 
 
+//Home JSON bean which should be called from the home ctrl
 
 {
+	//This will have the list or array of the photos to be included in the home page
 	"photos":[
 
 		{
@@ -51,7 +53,7 @@ So the final bean approach for the home page is give below --
 		}
 
 	],
-
+	//This will have the brief info about the team and mission of Junoon Foundation
 	"missionandvision":[
 
 		{
@@ -72,6 +74,7 @@ So the final bean approach for the home page is give below --
 		}
 
 	],
+	//This will have the testimonial given by the Social Servant to Junoon Foundation
 	"testimonial":[
 
 		{
