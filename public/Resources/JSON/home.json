@@ -12,8 +12,43 @@
 			"name" : "Seth Goddin",
 			"content" : "Optimism is the most important human trait, because it allows us to evolve our ideas, to improve our situation, and to hope for a better tomorrow."
 		}
-	]
+	],
 
+	"meetandmission" : 
 
+		{
+			"meetTeam" : {
 
+				"heading" : "Meet our team",
+				"content1" : "Junoon Foundation as team is a brainchild of a group of young, energetic and dynamic go-getters, is a non-profitable organization working towards the betterment of a society." ,
+				"content2" : "Though we have a spectrum of initiatives, we intend to primarily focus on the education sector. Under our flagship programme Ummid. We work with schools, conduct workshops, teach children, carry out extra-curricular activities and try to indicate habit of reading in them."
+			},
+
+			"mission" : {
+
+				"heading" : "Our mission",
+				"education" : {
+
+					"title" : "Education",
+					"content" : "Junoon is working with schools from rural areas to bring new methods in pedagogy, impart life skills and soft skills, provide career guidance and encourage the love of arts and sports among children." 
+				},
+
+				"social" : {
+
+					"title" : "Social Awareness",
+					"content" : "Junoon believes for the progress of any community, political awareness and cooperation among the citizens of a village are two important things. It aims to generate them through various village-level initiatives."
+				},
+
+				"development" : {
+
+					"title" : "Sustainable Development",
+					"content" : "Junoon is trying to preserve the fast depleting cover of tress and vanishing jungles. Therefore, it arranges tree plantation drives, creates awareness among the citizens about the importance of nature, disadvantages of industries and sustainable agriculture etc."
+				}
+
+			}
+		}
 }
+	
+
+
+
