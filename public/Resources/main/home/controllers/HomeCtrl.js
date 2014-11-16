@@ -4,10 +4,10 @@ junoonFoundation.controller('HomeCtrl', function($http, $scope, $rootScope, $rou
 		console.log("Control comes to HomeCtrl");
 		var url = "Resources/JSON/home.json";
 		$http({
-			url: url,
-			method: 'GET',
-			headers: {
-				'content-type':'application/json'
+			url : url,
+			method : 'GET',
+			headers : {
+				'Content-Type' : 'application/json'
 			}
 		}).success(function(data,status,headers,config){
 			$rootScope.home=data;
