@@ -1,0 +1,82 @@
+Home Page Design
+
+
+As Home page in Junoon Foundation Includes contains three part --
+
+1. Images
+2. Mission and Vision
+3. Testimonial
+
+-------------------------------
+
+1. Images
+	
+	As decided with Yuvraaj Patil and Team (Junoon's Founder), on the home page we will have the images in the landing page. And number of images decided were 5.
+
+2. Mission and Vision
+
+	Mission and Vision are straight forward. It will have one Vision and one Mission.
+
+3. Testimonial
+
+	As per design, I think of diving the Testimonial into two parts 
+
+		1. Long Testimonial
+		2. short Testimonial
+
+
+So the final bean approach for the home page is give below -- 
+
+
+{
+	"photos":[
+
+		{
+
+			"name":"It Includes photo name for the alt in the list",
+			"path":"It will have the path of the file"	
+
+		},
+		{
+
+			"name":"It Includes photo name for the alt in the list",
+			"path":"It will have the path of the file"
+
+		},
+		{	
+
+			"name":"It Includes photo name for the alt in the list",
+			"path":"It will have the path of the file"
+
+		}
+
+	],
+
+	"missionandvision":[
+
+		{
+			"meetOurTeam":
+				{
+					"paragraph1":"Content of paragraph 1",
+					"paragraph2":"Content of paragraph 2"
+				}
+			
+		},
+		{
+			"mission":
+				{
+					"education":"Paragraph of education",
+					"socialAwareness":"Paragraph of social awareness",
+					"development":"Paragrpah for sustainable development"
+				}
+		}
+
+	],
+	"testimonial":[
+
+		{
+			"largeTestimonial": [],
+			"smallTestimonial":[]
+		}
+	]
+}
