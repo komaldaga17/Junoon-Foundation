@@ -1,3 +1,7 @@
-'use strict';
+'use strict'
 
-var junoonFoundation = angular.module('junoonFoundation', []);
+var junoonFoundation = angular.module('junoonFoundation',
+	[
+	 'ngRoute'
+	]
+);
