@@ -1,4 +1,5 @@
 	var junoonFoundation = angular.module('junoonFoundation');
+	
 	junoonFoundation.controller('HomeCtrl', function($http, $scope, $rootScope, $route){
 	$scope.init = function(){
 		console.log("Control comes to HomeCtrl");
