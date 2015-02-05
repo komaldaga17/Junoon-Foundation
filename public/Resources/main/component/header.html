@@ -20,16 +20,16 @@
 	</header><!-- Header Ends Over Here -->
 	<nav class="container"><!-- Navigation Class Begins Here -->
 		<ul>
-			<li class="navigationGap active">
+			<li class="navigationGap" ng-click="setRoute('home')" ng-class="{'active' : homeActive}">
 				<i class = "fa fa-home" style="margin-right:5px;" ></i> Home
 			</li>
-			<li class="navigationGap">
+			<li class="navigationGap" ng-click="setRoute('work')" ng-class="{'active' : workActive}">
 				<i class = "fa fa-tasks" style="margin-right:5px;"></i> What We Do
 			</li>
-			<li class="navigationGap">
+			<li class="navigationGap" ng-click="setRoute('about')" ng-class="{'active' : aboutActive}">
 				<i class = "fa fa-users" style="margin-right:5px;"></i> Who We Are
 			</li>
-			<li class="navigationGap">
+			<li class="navigationGap" ng-click="setRoute('contact')" ng-class="{'active' : contactActive}">
 				<i class = "fa fa-envelope" style="margin-right:5px;"></i> Contact Us
 			</li>
 		</ul>

@@ -25,7 +25,8 @@
 	<body ng-controller="Mainctrl" ng-init="initMain()">
 		<div id="junoon">  <!-- Our CSS start fro, this id -->
 			<div ng-include="'Resources/main/component/header.html'"></div>
-			<div ng-include="'Resources/main/home/views/home.html'"></div>
+			<!-- <div ng-include="'Resources/main/home/views/home.html'"></div> -->
+			<div ng-view></div>
 			<div ng-include="'Resources/main/component/footer.html'">
 					
 		</div>

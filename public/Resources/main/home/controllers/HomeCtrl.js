@@ -3,6 +3,7 @@
 	$rootScope.init = function(){
 		console.log("Control comes to HomeCtrl");
 		var url = "Resources/JSON/home.json";
+		$rootScope.homeActive=true;
 		$http({
 			url : url,
 			method : 'GET',
