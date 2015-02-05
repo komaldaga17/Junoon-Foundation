@@ -9,6 +9,7 @@ junoonFoundation.controller('Mainctrl', function($http, $scope, $rootScope, $rou
 		$location.path(route);
 		console.log(route);
 		$rootScope.routeValue = route;
+		console.log($location.path());
 		
 	}
 });
