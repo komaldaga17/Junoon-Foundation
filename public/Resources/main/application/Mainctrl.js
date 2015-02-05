@@ -20,17 +20,17 @@ junoonFoundation.config(function($routeProvider){
 		}).
 		when('/work',
 		{
-			templateUrl	: 'Resources/main/home/views/work.html',
+			templateUrl	: 'Resources/main/work/views/work.html',
 			controleer	: 'WorkCtrl'
 		}).
 		when('/about', 
 		{
-			templateUrl : 'Resources/main/home/views/about.html',
+			templateUrl : 'Resources/main/about/views/about.html',
 			controller	: 'AboutCtrl'
 		}).
 		when('/contact', 
 		{
-			templateUrl : 'Resources/main/home/views/contact.html',
+			templateUrl : 'Resources/main/contact/views/contact.html',
 			controller	: 'ContactCtrl'
 		})
 
