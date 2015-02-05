@@ -15,13 +15,23 @@ junoonFoundation.config(function($routeProvider){
 	$routeProvider.
 		when('/home',
 		{
-			templateUrl : 'Resources/main/home/views/home.html',
-			controller : 'HomeCtrl'
+			templateUrl	: 'Resources/main/home/views/home.html',
+			controller	: 'HomeCtrl'
 		}).
 		when('/work',
 		{
+			templateUrl	: 'Resources/main/home/views/home.html',
+			controleer	: 'WorkCtrl'
+		}).
+		when('/about', 
+		{
 			templateUrl : 'Resources/main/home/views/home.html',
-			controleer : 'HomeCtrl'
+			controller	: 'AboutCtrl'
+		}).
+		when('/contact', 
+		{
+			templateUrl : 'Resources/main/home/views/home.html',
+			controller	: 'ContactCtrl'
 		})
 
 })
