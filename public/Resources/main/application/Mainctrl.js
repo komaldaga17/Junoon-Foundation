@@ -4,14 +4,20 @@ junoonFoundation.controller('Mainctrl', function($http, $scope, $rootScope, $rou
 	$rootScope.initMain = function(){
 		console.log("Saurabh Runs his first Angular App");
 	}
-	
+	$rootScope.homePath='/home';
+	$rootScope.workPath='/work';
+	$rootScope.contactPath='/contact';
+	$rootScope.aboutPath='/about';
+	$rootScope.activeRoute='/home';
 	$rootScope.setRoute = function(route){
 		$location.path(route);
 		console.log(route);
 		$rootScope.routeValue = route;
-		console.log($location.path());
+		$rootScope.activeRoute = $location.path();
+		console.log(typeof(route));
 		
 	}
+
 });
 junoonFoundation.config(function($routeProvider){
 	$routeProvider.
