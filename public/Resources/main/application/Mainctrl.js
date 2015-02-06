@@ -19,6 +19,7 @@ junoonFoundation.controller('Mainctrl', function($http, $scope, $rootScope, $rou
 	}
 
 });
+// Using Route Provider Module for multiple views and templating in short seting the application configuration
 junoonFoundation.config(function($routeProvider){
 	$routeProvider.
 		when('/home',
