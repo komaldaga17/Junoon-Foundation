@@ -1,6 +1,6 @@
 var junoonFoundation = angular.module('junoonFoundation');
 
-junoonFoundation.controller('Mainctrl', function($http, $scope, $rootScope, $route, $location){
+junoonFoundation.controller('Mainctrl', ['$http', '$scope', '$rootScope', '$route', '$location', function($http, $scope, $rootScope, $route, $location){
 	$rootScope.initMain = function(){
 		console.log("Control comes to the main controller");
 	}
@@ -18,7 +18,7 @@ junoonFoundation.controller('Mainctrl', function($http, $scope, $rootScope, $rou
 		
 	}
 
-});
+}]);
 // Using Route Provider Module for multiple views and templating in short seting the application configuration
 junoonFoundation.config(function($routeProvider){
 	$routeProvider.
