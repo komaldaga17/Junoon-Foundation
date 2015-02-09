@@ -4,6 +4,7 @@ junoonFoundation.controller('Mainctrl', ['$http', '$scope', '$rootScope', '$rout
 	$rootScope.initMain = function(){
 		console.log("Control comes to the main controller");
 	}
+	//Root variable to keep track of the active tab.
 	$rootScope.homePath='/home';
 	$rootScope.workPath='/work';
 	$rootScope.contactPath='/contact';
