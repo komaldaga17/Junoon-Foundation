@@ -1,3 +1,5 @@
+'use strict'
+
 var junoonFoundation = angular.module('junoonFoundation');
 
 junoonFoundation.controller('Mainctrl', ['$http', '$scope', '$rootScope', '$route', '$location', function($http, $scope, $rootScope, $route, $location){
@@ -18,7 +20,6 @@ junoonFoundation.controller('Mainctrl', ['$http', '$scope', '$rootScope', '$rout
 		console.log(typeof(route));
 		
 	}
-
 }]);
 // Using Route Provider Module for multiple views and templating in short seting the application configuration
 junoonFoundation.config(function($routeProvider){
