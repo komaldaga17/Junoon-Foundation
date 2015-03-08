@@ -44,8 +44,8 @@ junoonFoundation.config(function($routeProvider){
 			templateUrl : 'Resources/main/contact/views/contact.html',
 			controller	: 'ContactCtrl'
 		}).
-		otherwise({
-			redirectTo	: '/home'
+		otherwise(
+{			redirectTo	: '/home'
 		})
 
 });
