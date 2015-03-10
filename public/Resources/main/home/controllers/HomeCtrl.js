@@ -1,3 +1,4 @@
+'use-strict';
 	var junoonFoundation = angular.module('junoonFoundation');
 
 	junoonFoundation.controller('HomeCtrl', ['$http', '$scope', '$rootScope', '$route', function($http, $scope, $rootScope, $route){

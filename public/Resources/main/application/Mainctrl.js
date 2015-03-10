@@ -46,8 +46,8 @@ junoonFoundation.config(function($routeProvider){
 		}).
 		when('/edit-home',
 		{
-			templateUrl : 'Resources/edit/views/home.html',
-			controller	: 'EditHomeController'
+			templateUrl : 'Resources/edit/home/views/home-edit.html',
+			controller	: 'EditHomeCtrl'
 		}).
 		otherwise(
 {			redirectTo	: '/home'
