@@ -44,6 +44,11 @@ junoonFoundation.config(function($routeProvider){
 			templateUrl : 'Resources/main/contact/views/contact.html',
 			controller	: 'ContactCtrl'
 		}).
+		when('/edit-home',
+		{
+			templateUrl : 'Resources/edit/views/home.html',
+			controller	: 'EditHomeController'
+		}).
 		otherwise(
 {			redirectTo	: '/home'
 		})

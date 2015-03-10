@@ -22,7 +22,7 @@
 			</div>
 		</div>
 		<div class="row notHover gap-bottom">
-			<div class="col-md-6" ng-repeat = "testimonial in home.testimonial.smallTestimonial" ng-if = "$index%2==0">
+			<div class="col-md-6" ng-repeat = "testimonial in home.testimonial.smallTestimonial" ng-if = "$even">
 				<div class="testimonial">
 					<div class="picture">
 						<img ng-src="{{testimonial.image}}" />
@@ -35,7 +35,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="col-md-6" ng-repeat = "testimonial in home.testimonial.smallTestimonial" ng-if="$index%2!=0">
+			<div class="col-md-6" ng-repeat = "testimonial in home.testimonial.smallTestimonial" ng-if="$odd">
 				<div class="testimonial">
 					<div class="picture">
 						<img ng-src="{{testimonial.image}}" />
