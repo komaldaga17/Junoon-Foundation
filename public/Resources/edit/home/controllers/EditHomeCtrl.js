@@ -18,4 +18,13 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 
 		// }
 	}
+
+	console.log($rootScope.home.quotes);
+	// $scope.editQuotes = {
+	// 	[
+	// 		{
+	// 			"edit" : "0"
+	// 		}
+	// 	]
+	// }
 }]);

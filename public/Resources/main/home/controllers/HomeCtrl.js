@@ -14,7 +14,7 @@
 			}
 		}).success(function(data,status,headers,config){
 			$rootScope.home=data;
-			console.log($rootScope.home);
+			console.log($rootScope.home.quotes);
 		}).error(function(data, status, headers, config){
 			console.log("Error comes");
 		});
