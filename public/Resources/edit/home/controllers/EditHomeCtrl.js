@@ -5,7 +5,18 @@ var junoonFoundation = angular.module('junoonFoundation');
 junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$location', function($scope, $http, $rootScope, $location){
 	$scope.init = function(){
 		console.log("I am edit controller");
+		$scope.quotesList = [];
+		console.log($rootScope.home.quotes);
+		for(var key in $rootScope.home.quotes){
+			$scope.quotesList[key] = {};
+			$scope.quotesList[key].name = $rootScope.home.quotes[key].name;
+			$scope.quotesList[key].content = $rootScope.home.quotes[key].content;
+			// console.log(quotes);
+		}
+		console.error($scope.quotesList);
+
 	}
+
 	$scope.open = function(index, element){
 		console.log(index);
 		console.log(element);
@@ -18,8 +29,13 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 
 		// }
 	}
+	// var quotes = $rootScope.home.quotes;
+	// console.log(quotes);
+	// $scope.quotes = new Object();
 
-	console.log($rootScope.home.quotes);
+	
+
+	
 	// $scope.editQuotes = {
 	// 	[
 	// 		{

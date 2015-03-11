@@ -1,10 +1,10 @@
 <div class="sectionLine">
 	<section class="container"> <!-- Here starts the content section of the Website -->
 		<div class="row gap-bottom"> <!-- Row of the thought block starts here -->
-			<div id="{{$index}}" ng-repeat="quote in home.quotes" class="col-md-4">
+			<div id="{{$index}}" ng-repeat="quote in quotesList" class="col-md-4">
 				<div class="thoughtBlock">
 					<header class="thoughtHeader">
-						<input type="text" name="quote{{$index}} value={{quote.name}}"></input>
+						<input type="text" name="quote{{$index}}" ng-model="quotesList[$index].name"></input>
 					</header>
 					<div class="thoughtContent">
 						<p><sup><i class="fa fa-quote-left fa-lg"></i></sup> &nbsp;{{quote.content}} &nbsp;<sup><i class="fa fa-quote-right fa-lg"></i></sup>
