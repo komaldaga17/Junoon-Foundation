@@ -1,7 +1,7 @@
 <div class="sectionLine">
 	<section class="container"> <!-- Here starts the content section of the Website -->
 		<div class="row gap-bottom"> <!-- Row of the thought block starts here -->
-			<div id="{{$index}}" ng-repeat="quote in home.quotes" class="col-md-4">
+			<div id="{{$index}}" ng-repeat="quote in home.quotes" class="col-md-4" ng-click="open($index, '/quotes')">
 				<div class="thoughtBlock">
 					<header class="thoughtHeader">
 						<h3>{{quote.name}}</h3>
@@ -11,9 +11,9 @@
 						</p>
 					</div>
 				</div>
-				<button ng-click="showIndex($index)">Edit</button>
+				
 			</div>
 		</div> <!-- Row of the thought ends here -->
-
 	</section>
 </div>
+
