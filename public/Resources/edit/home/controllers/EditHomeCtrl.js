@@ -11,6 +11,9 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 			$scope.quotesList[key] = {};
 			$scope.quotesList[key].name = $rootScope.home.quotes[key].name;
 			$scope.quotesList[key].content = $rootScope.home.quotes[key].content;
+			// $scope.quotesList[key].isActive = function(){
+			// 									return true;
+			// 								}
 			// console.log(quotes);
 		}
 		console.error($scope.quotesList);
@@ -30,11 +33,16 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 
 		// }
 	}
-	$scope.enableInput = false;
-	$scope.initializeEdit = function(index){
-		$scope.enableInput = true;
-		return $scope.enableInput;
+
+	$scope.clicked = function(index){
+		$scope.quotesList[index].isActive = true;;
+		console.log($scope.quotesList[index].isActive + "at" + index);
 	}
+	// $scope.enableInput = false;
+	// $scope.initializeEdit = function(index){
+	// 	$scope.enableInput = true;
+	// 	return $scope.enableInput;
+	// }
 
 	// var quotes = $rootScope.home.quotes;
 	// console.log(quotes);

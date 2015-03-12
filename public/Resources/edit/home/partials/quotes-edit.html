@@ -4,8 +4,8 @@
 			<div id="{{$index}}" ng-repeat="quote in quotesList" class="col-md-4">
 				<div class="thoughtBlock">
 					<header class="thoughtHeader">
-						<h3 ng-hide="enableInput" ng-click="initializeEdit($index)">{{quote.name}}</h3>
-						<input ng-show="enableInput" type="text" name="quote{{$index}}" ng-model="quotesList[$index].name"></input>
+						<h3 ng-hide="quotesList[$index].isActive == true" ng-click="clicked($index)">{{quote.name}}</h3>
+						<input ng-show="quotesList[$index].isActive == true" type="text" name="quote{{$index}}" ng-model="quotesList[$index].name"></input>
 					</header>
 					<div class="thoughtContent">
 						<p><sup><i class="fa fa-quote-left fa-lg" contenteditable="false"></i></sup> &nbsp;<textarea type="text" name="quote{{$index}}" ng-model="quotesList[$index].content"></textarea> &nbsp;<sup><i class="fa fa-quote-right fa-lg" contenteditable="false"></i></sup>
