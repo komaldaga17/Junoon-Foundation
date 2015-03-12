@@ -1,5 +1,8 @@
 'use strict'
 
+// This module is the main module of the Junoon Foundation and
+// We are going to config and add controller so that we can insert our business logic
+
 var junoonFoundation = angular.module('junoonFoundation');
 
 junoonFoundation.controller('Mainctrl', ['$http', '$scope', '$rootScope', '$route', '$location', function($http, $scope, $rootScope, $route, $location){
@@ -12,6 +15,7 @@ junoonFoundation.controller('Mainctrl', ['$http', '$scope', '$rootScope', '$rout
 	$rootScope.contactPath='/contact';
 	$rootScope.aboutPath='/about';
 	$rootScope.activeRoute='/home';
+	//This function is to update the location path so that user goes to the appropriate page
 	$rootScope.setRoute = function(route){
 		$location.path(route);
 		console.log(route);
