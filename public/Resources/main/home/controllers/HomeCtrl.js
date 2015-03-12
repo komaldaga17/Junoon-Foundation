@@ -1,11 +1,16 @@
 'use-strict';
-	var junoonFoundation = angular.module('junoonFoundation');
 
-	junoonFoundation.controller('HomeCtrl', ['$http', '$scope', '$rootScope', '$route', function($http, $scope, $rootScope, $route){
+//We are intializing the main module and we are going 
+//to add page specific controller logic
+
+var junoonFoundation = angular.module('junoonFoundation');
+
+junoonFoundation.controller('HomeCtrl', ['$http', '$scope', '$rootScope', '$route', function($http, $scope, $rootScope, $route){
+	
 	$scope.init = function(){
 		console.log("Control comes to HomeCtrl");
 		var url = "Resources/JSON/home.json";
-		
+		//To get the JSON object to throw data at the view	
 		$http({
 			url : url,
 			method : 'GET',
