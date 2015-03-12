@@ -30,6 +30,12 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 
 		// }
 	}
+	$scope.enableInput = false;
+	$scope.initializeEdit = function(index){
+		$scope.enableInput = true;
+		return $scope.enableInput;
+	}
+
 	// var quotes = $rootScope.home.quotes;
 	// console.log(quotes);
 	// $scope.quotes = new Object();
