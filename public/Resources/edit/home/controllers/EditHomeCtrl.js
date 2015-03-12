@@ -14,6 +14,7 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 			// console.log(quotes);
 		}
 		console.error($scope.quotesList);
+		console.log(typeof($scope.quotesList));
 
 	}
 
@@ -32,15 +33,4 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 	// var quotes = $rootScope.home.quotes;
 	// console.log(quotes);
 	// $scope.quotes = new Object();
-
-	
-
-	
-	// $scope.editQuotes = {
-	// 	[
-	// 		{
-	// 			"edit" : "0"
-	// 		}
-	// 	]
-	// }
 }]);

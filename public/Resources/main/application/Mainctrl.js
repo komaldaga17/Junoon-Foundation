@@ -22,7 +22,7 @@ junoonFoundation.controller('Mainctrl', ['$http', '$scope', '$rootScope', '$rout
 	}
 }]);
 // Using Route Provider Module for multiple views and templating in short seting the application configuration
-junoonFoundation.config(function($routeProvider){
+junoonFoundation.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
 		when('/home',
 		{
@@ -53,7 +53,7 @@ junoonFoundation.config(function($routeProvider){
 {			redirectTo	: '/home'
 		})
 
-});
+}]);
 
 
 
