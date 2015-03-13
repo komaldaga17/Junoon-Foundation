@@ -7,8 +7,10 @@
 						<h3 ng-hide="quotesList[$index].isActive" ng-click="clicked($index)">{{quote.name}}</h3>
 						<input ng-show="quotesList[$index].isActive" type="text" name="quote{{$index}}" ng-model="quotesList[$index].name"></input>
 					</header>
-					<div class="thoughtContent">
-						<p><sup><i class="fa fa-quote-left fa-lg" contenteditable="false"></i></sup> &nbsp;<textarea type="text" name="quote{{$index}}" ng-model="quotesList[$index].content"></textarea> &nbsp;<sup><i class="fa fa-quote-right fa-lg" contenteditable="false"></i></sup>
+					<div class="thoughtContent" ng-click="clicked($index)">
+						<p ng-hide="quotesList[$index].isActive"><sup><i class="fa fa-quote-left fa-lg" contenteditable="false"></i></sup> &nbsp;{{quote.content}} &nbsp;<sup><i class="fa fa-quote-right fa-lg" contenteditable="false"></i></sup>
+						</p>
+						<p ng-show="quotesList[$index].isActive"><!-- <sup><i class="fa fa-quote-left fa-lg" contenteditable="false"></i></sup> --> &nbsp;<textarea type="text" name="quote{{$index}}" ng-model="quotesList[$index].content"></textarea> &nbsp;<!-- <sup><i class="fa fa-quote-right fa-lg" contenteditable="false"></i></sup> -->
 						</p>
 					</div>
 				</div>
