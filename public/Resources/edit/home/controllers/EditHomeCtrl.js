@@ -14,7 +14,7 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 			$scope.quotesList[key].isActive = false;
 			// console.log(quotes);
 		}
-		console.error($scope.quotesList);
+		console.log($scope.quotesList);
 		console.log(typeof($scope.quotesList));
 
 	}
