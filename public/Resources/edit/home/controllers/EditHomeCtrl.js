@@ -18,23 +18,17 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 		console.log(typeof($scope.quotesList));
 
 	}
-
 	$scope.open = function(index, element){
 		console.log(index);
 		console.log(element);
-		// if(element == '/quotes'){
-		// 	 var path = $location.path() + element;
-		// 	 console.log(path);
-		// 	 $location.path(path);
-		// 	 // $location.path(path + element);
-		// 	 /*console.log($location.path(path + element));*/
-
-		// }
 	}
-
 	$scope.clicked = function(index){
 		$scope.quotesList[index].isActive = true;
 		console.log($scope.quotesList[index].isActive + "at" + index);
+	}
+	$scope.submit = function(){
+		alert("I got clicked ahhhh");
+
 	}
 	
 }]);
