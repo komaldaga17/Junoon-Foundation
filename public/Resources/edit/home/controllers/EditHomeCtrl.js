@@ -28,6 +28,16 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 	}
 	$scope.submit = function(){
 		alert("I got clicked ahhhh");
+		var requestObject = [];
+		for(var key=0 in $scope.quotesList){
+			if($scope.quotesList[key].name !== $rootScope.home.quotes[key].name){
+				console.log("They are different");
+				requestObject.push($scope.quotesList[key]);
+				console.log(requestObject);
+			}else{
+				console.log("They are the same");
+			}
+		}
 
 	}
 	
