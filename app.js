@@ -14,34 +14,31 @@ app.use(bodyParser.json());
 console.log(__dirname);
 app.use(express.static(__dirname + '/public'));
 
-
 var port = process.env.PORT || 8000;
-console.log(app.post);3
-var payload = [];
+
 app.post('/getUrl', function(req,res){
 	console.log("I am in server");
-	// console.log(JSON.parse(req));
-	// console.log(JSON.parse(req).name);
 	var data = req.body;
 	console.log(data);
 	console.log(data[0].name);
 	editJSON(data);	
 });
 
-
 function editJSON(data){
 	var obj;
+	var newData = data;
 	fs.readFile('public/Resources/JSON/home.json', 'utf8', function(err,data){
-		console.log("I am reading file");
-		// console.log(data);
-		// console.log(obj);
-		// console.log(home.quotes);
-		console.log("Content : "  + data);
-		console.log(typeof(data));
-		console.log((JSON.parse(data)).quotes);
+		var existingObject = (JSON.parse(data));
+		if(newData.length == 1){
+			existingObject.quotes[0].name = newData[0].name;
+			existingObject.quotes[0].content = newData[0].content;
+		}
+		console.log(existingObject);
+		writeFile(existingObject);
+	});	
+}
 
-	});
-	fs.lstatSync('public/Resources/JSON/home.json').isFile();
-	
+function writeFile(existingObject){
+		fs.writeFileSync('public/Resources/JSON/home.json', JSON.stringify(existingObject));
 }
 app.listen(port);
