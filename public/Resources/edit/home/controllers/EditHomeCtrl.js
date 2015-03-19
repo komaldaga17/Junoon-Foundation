@@ -44,7 +44,6 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 			data : JSON.stringify(requestObject),
 			headers : {'Content-Type' : 'application/json'}			
 			}).success(function(data, status, headers, config){
-				console.log(status);
 				console.log("This is will execute when there is some response");
 			}).error(function(data, status, headers, config){
 				console.log("Error Comes while editing the stuff");

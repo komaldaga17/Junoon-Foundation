@@ -26,10 +26,15 @@ function editJSON(data){
 	var newData = data;
 	fs.readFile('public/Resources/JSON/home.json', 'utf8', function(err,data){
 		var existingObject = (JSON.parse(data));
-		if(newData.length == 1){
-			existingObject.quotes[0].name = newData[0].name;
-			existingObject.quotes[0].content = newData[0].content;
+		for(var key=0 in newData){
+			existingObject.quotes[key].name = newData[key].name;
+			existingObject.quotes[key].content = newData[key].content;
+			console.log(newData[key].name);
 		}
+		// if(newData.length == 1){
+		// 	existingObject.quotes[0].name = newData[0].name;
+		// 	existingObject.quotes[0].content = newData[0].content;
+		// }
 		console.log(existingObject);
 		writeFile(existingObject);
 	});	
