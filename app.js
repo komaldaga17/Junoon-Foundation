@@ -1,9 +1,13 @@
 'use strict';
 
 var express = require('express');
-var app = express();
+var bodyParser = require('body-parser');
 var fs = require('fs');
+var request = require('request');
 
+var app = express();
+app.use(bodyParser.json());
+console.log(__dirname);
 app.use(express.static(__dirname + '/public'));
 
 var port = process.env.PORT || 8000;
@@ -13,7 +17,9 @@ app.post('/getUrl', function(req,res){
 	var data = req.body;
 	console.log(data);
 	console.log(data[0].name);
-	editJSON(data);	
+	editJSON(data);
+	res.end();	
+
 });
 function editJSON(data){
 	var obj;
@@ -28,7 +34,6 @@ function editJSON(data){
 		writeFile(existingObject);
 	});	
 }
-
 function writeFile(existingObject){
 		fs.writeFileSync('public/Resources/JSON/home.json', JSON.stringify(existingObject));
 }
