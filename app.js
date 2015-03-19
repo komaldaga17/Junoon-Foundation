@@ -1,19 +1,9 @@
 'use strict';
 
 var express = require('express');
-var bodyParser = require('body-parser');
-var fs = require('fs');
-var request = require('request');
-
-// request('/Resources/JSON/home.json', function(err, resp){
-// 	if(resp.statusCode === 200){
-// 		console.log("I am there at the location");
-// 	}
-// })
-
 var app = express();
-app.use(bodyParser.json());
-console.log(__dirname);
+var fs = require('fs');
+
 app.use(express.static(__dirname + '/public'));
 
 var port = process.env.PORT || 8000;
@@ -25,7 +15,6 @@ app.post('/getUrl', function(req,res){
 	console.log(data[0].name);
 	editJSON(data);	
 });
-
 function editJSON(data){
 	var obj;
 	var newData = data;
