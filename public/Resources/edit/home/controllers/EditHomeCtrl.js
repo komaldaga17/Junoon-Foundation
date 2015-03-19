@@ -47,6 +47,7 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 				console.log("This is will execute when there is some response");
 			}).error(function(data, status, headers, config){
 				console.log("Error Comes while editing the stuff");
-			});		
+			});	
+		requestObject.length = 0;
 	}
 }]);
