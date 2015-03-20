@@ -36,7 +36,7 @@ function editJSON(data){
 		// }
 		// console.log(existingObject);
 		writeFile(existingObject);
-		newData = '';
+		
 	});	
 }
 function writeFile(existingObject){
