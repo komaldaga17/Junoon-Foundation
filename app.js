@@ -14,6 +14,8 @@ var port = process.env.PORT || 8000;
 
 app.post('/getUrl', function(req,res){
 	console.log("I am in server");
+	console.log(req.url);
+	console.log(res.statusCode);
 	var data = req.body;	
 	editJSON(data);
 	res.end();	
