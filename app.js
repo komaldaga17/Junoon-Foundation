@@ -14,12 +14,9 @@ var port = process.env.PORT || 8000;
 
 app.post('/getUrl', function(req,res){
 	console.log("I am in server");
-	var data = req.body;
-	// console.log(data);
-	// console.log(data[0].name);
+	var data = req.body;	
 	editJSON(data);
 	res.end();	
-
 });
 function editJSON(data){
 	var obj;
@@ -36,7 +33,7 @@ function editJSON(data){
 		// }
 		// console.log(existingObject);
 		writeFile(existingObject);
-		
+
 	});	
 }
 function writeFile(existingObject){
