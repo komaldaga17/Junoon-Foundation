@@ -35,7 +35,10 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 				requestObject.push($scope.quotesList[key]);
 				console.log(requestObject);		
 			}else{
-				console.log("They are Different");
+				requestObject.push(null);
+				console.log("They are Same");
+				console.log(requestObject[1]);
+				console.log(requestObject[2]);
 			}
 		}
 		$http({

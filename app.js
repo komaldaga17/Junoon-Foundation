@@ -33,7 +33,7 @@ function editJSON(data){
 		// 	existingObject.quotes[0].name = newData[0].name;
 		// 	existingObject.quotes[0].content = newData[0].content;
 		// }
-		// console.log(existingObject);asasd
+		// console.log(existingObject);
 		writeFile(existingObject);
 
 	});	
