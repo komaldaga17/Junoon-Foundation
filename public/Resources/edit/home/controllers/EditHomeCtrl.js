@@ -16,11 +16,7 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 		}
 		console.log($scope.quotesList);
 		console.log(typeof($scope.quotesList));
-	}
-	$scope.open = function(index, element){
-		console.log(index);
-		console.log(element);
-	}
+	}	
 	$scope.clicked = function(index){
 		$scope.quotesList[index].isActive = true;
 		console.log($scope.quotesList[index].isActive + "at" + index);
@@ -30,7 +26,7 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 		var requestObject = [];
 		var url = "Resources/JSON/home.json";
 		for(var key=0 in $scope.quotesList){
-			if($scope.quotesList[key].name !== $rootScope.home.quotes[key].name){
+			if($scope.quotesList[key].name !== $rootScope.home.quotes[key].name || $scope.quotesList[key].content !== $rootScope.home.quotes[key].content){
 				console.log("They are different");
 				requestObject.push($scope.quotesList[key]);
 				console.log(requestObject);		
