@@ -18,6 +18,7 @@ app.post('/getUrl', function(req,res){
 	console.log(res.statusCode);
 	var data = req.body;	
 	editJSON(data);
+	res.send("I got into the success of the api");
 	res.end();	
 });
 function editJSON(data){
