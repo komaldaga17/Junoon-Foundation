@@ -37,10 +37,10 @@ function editJSON(data){
 		}		
 		writeFile(existingObject);
 	});	
-}
+};
 function writeFile(existingObject){
 		fs.writeFileSync('public/Resources/JSON/home.json', JSON.stringify(existingObject));
-}
+};
 
 
 
