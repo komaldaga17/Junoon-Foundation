@@ -24,7 +24,6 @@ function editJSON(data){
 	var newData = data;
 	fs.readFile('public/Resources/JSON/home.json', 'utf8', function(err,data){
 		var existingObject = (JSON.parse(data));
-		console.log(existingObject);
 		for(var key=0 in newData){
 			if(newData[key] == null){
 				existingObject.quotes[key].name = existingObject.quotes[key].name;

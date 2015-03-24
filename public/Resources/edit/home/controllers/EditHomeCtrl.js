@@ -44,6 +44,7 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 			headers : {'Content-Type' : 'application/json'}			
 			}).success(function(data, status, headers, config){
 				console.log("This is will execute when there is some response");
+				alert("Recoed got saved, now you can go to home page to see the changes");
 				console.log(status);
 				console.log(headers);
 				console.log(data);
