@@ -10,7 +10,7 @@ var request = require('request');
 
 console.log("I am into the route");
 
-app.post('/getUrl', function(req,res){
+app.post('/getQuotes', function(req,res){
 	console.log("I am in server");
 	console.log(req.url);
 	console.log(res.statusCode);

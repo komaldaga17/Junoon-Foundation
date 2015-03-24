@@ -22,7 +22,7 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 		console.log($scope.quotesList[index].isActive + "at" + index);
 	}
 	$scope.submit = function(){
-		alert("I got clicked ahhhh");
+		alert("I got clicked");
 		var requestObject = [];
 		// var url = "Resources/JSON/home.json";
 		for(var key=0 in $scope.quotesList){
@@ -39,14 +39,13 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 		}
 		$http({
 			method : 'POST',
-			url	: '/getUrl',
+			url	: '/getQuotes',
 			data : JSON.stringify(requestObject),
 			headers : {'Content-Type' : 'application/json'}			
 			}).success(function(data, status, headers, config){
 				console.log("This is will execute when there is some response");
 			}).error(function(data, status, headers, config){
 				console.log("Error Comes while editing the stuff");
-			});	
-		requestObject.length = 0;
+			});			
 	}
 }]);
