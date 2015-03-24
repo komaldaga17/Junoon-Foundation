@@ -7,18 +7,7 @@ var fs = require('fs');
 
 console.log("I am into the route");
 
-app.post('/getUrl', function(req,res){
-	console.log("I am in server");
-	console.log(req.url);
-	console.log(res.statusCode);
-	var data = req.body;	
-	editJSON(data);
-	res.send("I got into the success of the api");
-	res.end();	
-});
-
 function editJSON(data){
-	var obj;
 	var newData = data;
 	fs.readFile('public/Resources/JSON/home.json', 'utf8', function(err,data){
 		var existingObject = (JSON.parse(data));
@@ -39,3 +28,14 @@ function editJSON(data){
 function writeFile(existingObject){
 		fs.writeFileSync('public/Resources/JSON/home.json', JSON.stringify(existingObject));
 };
+
+app.post('/getUrl', function(req,res){
+	console.log("I am in server");
+	console.log(req.url);
+	console.log(res.statusCode);
+	var data = req.body;	
+	editJSON(data);
+	res.send("I got into the success of the api");
+	res.end();	
+});
+
