@@ -39,7 +39,7 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 		}
 		$http({
 			method : 'POST',
-			url	: 'getUrl',
+			url	: '/getUrl',
 			data : JSON.stringify(requestObject),
 			headers : {'Content-Type' : 'application/json'}			
 			}).success(function(data, status, headers, config){
