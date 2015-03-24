@@ -7,6 +7,7 @@ var fs = require('fs');
 
 console.log("I am into the route");
 
+
 function editJSON(data){
 	var newData = data;
 	fs.readFile('public/Resources/JSON/home.json', 'utf8', function(err,data){
@@ -19,8 +20,7 @@ function editJSON(data){
 			}else{
 				existingObject.quotes[key].name = newData[key].name;
 				existingObject.quotes[key].content = newData[key].content;
-			}
-						
+			}						
 		}		
 		writeFile(existingObject);
 	});	
