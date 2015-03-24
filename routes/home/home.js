@@ -1,6 +1,9 @@
 'use strict';
 
 
+
+// You can also export this module using var module.exports = function(app){}
+//And on the main app.js fiel you can use require(pathofthejsfile)(app);
 var express = require('express');
 var app = module.exports = express();
 var fs = require('fs');
