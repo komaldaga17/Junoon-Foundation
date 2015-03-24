@@ -36,7 +36,7 @@ junoonFoundation.controller('EditHomeCtrl', ['$scope', '$http', '$rootScope', '$
 				console.log(requestObject[1]);
 				console.log(requestObject[2]);
 			}
-		}
+		}		
 		$http({
 			method : 'POST',
 			url	: '/getQuotes',

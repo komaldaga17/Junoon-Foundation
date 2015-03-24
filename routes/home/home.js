@@ -14,7 +14,8 @@ app.post('/getQuotes', function(req,res){
 	console.log("I am in server");
 	console.log(req.url);
 	console.log(res.statusCode);
-	var data = req.body;	
+	var data = req.body;
+	console.log(typeof(data));
 	editJSON(data);
 	res.send(data);
 	res.end();	
