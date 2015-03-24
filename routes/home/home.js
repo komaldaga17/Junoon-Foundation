@@ -16,7 +16,7 @@ app.post('/getQuotes', function(req,res){
 	console.log(res.statusCode);
 	var data = req.body;	
 	editJSON(data);
-	res.send("I got into the success of the api");
+	res.send(data);
 	res.end();	
 });
 
