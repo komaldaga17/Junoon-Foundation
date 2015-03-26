@@ -20,7 +20,7 @@ app.post('/getQuotes', function(req,res){
 	res.send(data);
 	res.end();	
 });
-
+//To Edit The JSON
 function editJSON(data){
 	var newData = data;
 	fs.readFile('public/Resources/JSON/home.json', 'utf8', function(err,data){
