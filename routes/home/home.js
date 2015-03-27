@@ -32,7 +32,7 @@ function editJSON(data){
 
 			}else{
 				existingObject.quotes[key].name = newData[key].name;
-				existingObject.quotes[key].content = newData[key].content;
+				existingObject.quotes[key].content = newData[key].content;//This is the content coming from front end
 			}						
 		}		
 		writeFile(existingObject);
